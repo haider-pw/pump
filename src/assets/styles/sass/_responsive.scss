@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 @media (min-width: 992px) {
     .layout-wrapper {
         &.layout-overlay {

@@ -1,15 +1,23 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-
   app: {
     head: {
       meta: [
-        { 'http-equiv': 'x-ua-compatible', 'content': 'IE=edge' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+        {
+          'http-equiv': 'x-ua-compatible',
+          'content': 'IE=edge'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1.0'
+        }
       ],
       link: [
-        { rel: 'icon', href: '/favicon.ico' }
+        {
+          rel: 'icon',
+          href: '/favicon.ico'
+        }
       ]
     }
   },
@@ -48,8 +56,8 @@ export default defineNuxtConfig({
   experimental: {
     asyncContext: true,
     headNext: true,
-    typedPages: true,
-    typescriptBundlerResolution: true
+    typedPages: true
+    // typescriptBundlerResolution: true
   },
 
   // @ts-ignore
@@ -138,5 +146,7 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
+  },
+
+  compatibilityDate: '2025-01-17'
 });
