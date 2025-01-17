@@ -1,7 +1,7 @@
 <script lang="ts">
 export default {
   name: 'Free',
-  data() {
+  data () {
     return {
       block1: `
 <div class="grid grid-nogutter surface-section text-800">
@@ -202,9 +202,9 @@ export default {
     <div class="align-items-center hidden lg:flex">
         <span class="line-height-3">Libero voluptatum atque exercitationem praesentium provident odit.</span>
     </div>
-    <a class="flex align-items-center ml-2 mr-8">
+    <div class="flex align-items-center ml-2 mr-8">
         <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
-    </a>
+    </div>
     <a v-ripple class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150 p-ripple" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
     </a>
@@ -409,7 +409,8 @@ export default {
               your visitors deserve to see
             </div>
             <p class="mt-0 mb-4 text-700 line-height-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
             </p>
 
             <Button label="Learn More" type="button" class="mr-3 p-button-raised" />
@@ -417,7 +418,9 @@ export default {
           </section>
         </div>
         <div class="col-12 md:col-6 overflow-hidden">
-          <img src="/images/blocks/hero/hero-1.png" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+          <img src="/images/blocks/hero/hero-1.png" alt="Image" class="md:ml-auto block md:h-full"
+               style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)"
+          >
         </div>
       </div>
     </BlockViewer>
@@ -636,23 +639,30 @@ export default {
           <div class="text-700 text-2xl mb-5">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.
           </div>
-          <Button label="Join Now" icon="pi pi-discord" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap" />
+          <Button label="Join Now" icon="pi pi-discord"
+                  class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"
+          />
         </div>
       </div>
     </BlockViewer>
 
     <BlockViewer header="Banner" :code="block5" container-class="surface-section py-8">
-      <div class="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+      <div
+        class="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap"
+      >
         <div class="font-bold mr-8">
           🔥 Hot Deals!
         </div>
         <div class="align-items-center hidden lg:flex">
           <span class="line-height-3">Libero voluptatum atque exercitationem praesentium provident odit.</span>
         </div>
-        <a class="flex align-items-center ml-2 mr-8">
+        <div class="flex align-items-center ml-2 mr-8">
           <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
-        </a>
-        <a v-ripple class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150 p-ripple" style="width:2rem; height: 2rem">
+        </div>
+        <a v-ripple
+           class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150 p-ripple"
+           style="width:2rem; height: 2rem"
+        >
           <i class="pi pi-times" />
         </a>
       </div>
@@ -711,7 +721,9 @@ export default {
                     152
                   </div>
                 </div>
-                <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width:2.5rem;height:2.5rem">
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                     style="width:2.5rem;height:2.5rem"
+                >
                   <i class="pi pi-shopping-cart text-blue-500 text-xl" />
                 </div>
               </div>
@@ -728,7 +740,9 @@ export default {
                     $2.100
                   </div>
                 </div>
-                <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width:2.5rem;height:2.5rem">
+                <div class="flex align-items-center justify-content-center bg-orange-100 border-round"
+                     style="width:2.5rem;height:2.5rem"
+                >
                   <i class="pi pi-map-marker text-orange-500 text-xl" />
                 </div>
               </div>
@@ -745,7 +759,9 @@ export default {
                     28441
                   </div>
                 </div>
-                <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" style="width:2.5rem;height:2.5rem">
+                <div class="flex align-items-center justify-content-center bg-cyan-100 border-round"
+                     style="width:2.5rem;height:2.5rem"
+                >
                   <i class="pi pi-inbox text-cyan-500 text-xl" />
                 </div>
               </div>
@@ -762,7 +778,9 @@ export default {
                     152 Unread
                   </div>
                 </div>
-                <div class="flex align-items-center justify-content-center bg-purple-100 border-round" style="width:2.5rem;height:2.5rem">
+                <div class="flex align-items-center justify-content-center bg-purple-100 border-round"
+                     style="width:2.5rem;height:2.5rem"
+                >
                   <i class="pi pi-comment text-purple-500 text-xl" />
                 </div>
               </div>
@@ -774,7 +792,9 @@ export default {
       </div>
     </BlockViewer>
 
-    <BlockViewer header="Sign-In" :code="block8" container-class="surface-ground px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+    <BlockViewer header="Sign-In" :code="block8"
+                 container-class="surface-ground px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center"
+    >
       <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
         <div class="text-center mb-5">
           <img src="/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
