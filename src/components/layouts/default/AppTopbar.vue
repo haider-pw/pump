@@ -1,5 +1,11 @@
 <script lang="ts">
 export default {
+  props: {
+    sideMenuActive: {
+      type: Boolean,
+      default: true
+    }
+  },
   emits: ['topbarMenuToggle', 'menuToggle'],
   computed: {
     darkTheme() {
@@ -26,12 +32,12 @@ export default {
       <img alt="Logo" :src="topbarImage()">
       <span>SAKAI</span>
     </NuxtLink>
-    <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
+    <button v-if="sideMenuActive" class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
       <i class="pi pi-bars" />
     </button>
 
     <button
-      v-styleclass="{
+        v-styleclass="{
         selector: '@next',
         enterClass: 'hidden',
         enterActiveClass: 'scalein',
@@ -39,7 +45,7 @@ export default {
         leaveActiveClass: 'fadeout',
         hideOnOutsideClick: true
       }"
-      class="p-link layout-topbar-menu-button layout-topbar-button"
+        class="p-link layout-topbar-menu-button layout-topbar-button"
     >
       <i class="pi pi-ellipsis-v" />
     </button>

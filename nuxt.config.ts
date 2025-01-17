@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
+  devtools: {
+    enabled: true
+  },
   app: {
     head: {
       meta: [
@@ -42,6 +45,7 @@ export default defineNuxtConfig({
 
   css: [
     'primevue/resources/primevue.css',
+    'primevue/resources/themes/lara-light-indigo/theme.css',
     'primeflex/primeflex.css',
     'primeicons/primeicons.css',
     'prismjs/themes/prism-coy.css',
